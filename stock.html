@@ -1,0 +1,1088 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add('js')</script>
+<title>Stock | Cryo-Cell (NYSE American: CCEL) Investor Relations Concept</title>
+<meta name="description" content="The NYSE American listing and its notice, shares outstanding, the dividend history and its suspension, repurchases, ownership and the credit facility, with no share quote. An independent design concept, not affiliated with Cryo-Cell International, Inc.; the official IR site is https://ir.cryo-cell.com/.">
+<link rel="icon" href="img/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;family=Spline+Sans+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<style>
+/* mc:tokens */
+:root{
+  /* palette.mjs --brand "#56a0d3,#ffd74f" --strategy restrained  (restrained)
+     accent   #56a0d3 oklch(0.679 0.106 240.8)
+     accent-2 #ffd74f oklch(0.89 0.155 92.3)
+     measured: white on --accent-ink 7.03:1, --accent-ink on --paper 6.84:1, --text-mid on --tint 5.66:1 */
+  --H: 240.8; --Hn: 240.8;
+  --accent:        oklch(0.679 0.106 240.8); /* bright: fills on light stock; text only on dark where --check proves >= 4.5; real */
+  --accent-lo:     oklch(0.679 0.106 240.8 / 0.14);
+  --accent-lt:     oklch(0.86 0.076 240.8); /* bright accent ON dark surfaces */
+  --accent-ink:    oklch(0.46 0.106 240.8); /* TEXT, links, primary-button background */
+  --accent-ink-d:  oklch(0.40 0.092 240.8); /* hover */
+  --accent-2:      oklch(0.89 0.155 92.3); /* real */
+  --accent-2-lt:   oklch(0.86 0.124 92.3);
+  --accent-2-ink:  oklch(0.46 0.094 92.3);
+  --ink:           oklch(0.26 0.010 240.8); /* headings */
+  --deep:          oklch(0.19 0.006 240.8); /* permanently dark band */
+  --paper:         oklch(0.99 0.004 240.8);
+  --card:          oklch(0.996 0.002 240.8);
+  --tint:          oklch(0.965 0.018 240.8); /* .sec-tint band, concept note, card interiors */
+  --tint-2:        oklch(0.91 0.035 240.8); /* borders, ghost outlines, the darker of two light bands */
+  --text:          oklch(0.31 0.009 240.8);
+  --text-mid:      oklch(0.49 0.011 240.8);
+  --line:          oklch(0.30 0.010 240.8 / 0.13);
+  --line-d:        oklch(0.98 0.010 240.8 / 0.14);
+  /* surface-slot defaults (foundation surface block); retune in surface.css */
+  --sheet-edge:    oklch(0.40 0.092 240.8 / 0.26);
+  --blind:         oklch(1.00 0.000 0 / 0.5);
+  --blind-k:       oklch(1.00 0.000 0 / 0.85);
+  --sheet-neg:     oklch(0.98 0.010 240.8 / 0.05);
+  --serif:         'Jost', system-ui, sans-serif;
+  --sans:          'Source Serif 4', system-ui, sans-serif;
+  --mono:          'Spline Sans Mono', ui-monospace, monospace;
+  --wrap: 1140px; --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Cryo-Cell additions (literal, real): the logo dot's gold and its glow; the display/body roles named honestly.
+   NOTE on names: the substrate reads --serif for headings and --sans for body text. palette.mjs mapped them in the order
+   given, so --serif is JOST (display, light weights echo the thin wordmark) and --sans is SOURCE SERIF 4 (text, tabular figures). */
+:root{
+  --disp:var(--serif); --body:var(--sans);
+  --gold:#ffd74f;                              /* the mark's dot (gradient stop). Used ONLY as the dot, under 1% of any page */
+  --gold-glow:oklch(0.89 0.155 92.3 / 0.5);
+  --deep-2:oklch(0.145 0.006 240.8);           /* the gravest band and the wells inside dark bands */
+  --ink-mid:oklch(0.38 0.012 240.8);
+  --rule:oklch(0.30 0.010 240.8 / 0.55);       /* the printed double rule at a part head */
+}
+/* mc:substrate 9576b9be1505 */
+/* mediaconsole substrate: inlined by scripts/scaffold.mjs, identical on every page. Never edit or retype it;
+   override in page/layer.css or page/surface.css (both load after it). Band: all. Hue-parametric: colours are
+   tokens or oklch(... var(--Hn)). Integrity: opaque nav, content visible without JS, print and forced-colors safe. */
+:where(:root){--wrap:1140px;--ease:cubic-bezier(0.22, 1, 0.36, 1)}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;scroll-padding-top:88px}
+body{font-family:var(--sans);color:var(--text);background:var(--paper);font-size:16px;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none} img,svg{display:block;max-width:100%} button{font:inherit;cursor:pointer}
+::selection{background:var(--accent-lt);color:var(--deep)}
+:focus-visible{outline:2px solid var(--accent-ink);outline-offset:3px;border-radius:2px}
+.sec-dark :focus-visible,.snapshot :focus-visible,footer :focus-visible{outline-color:var(--accent-lt)}
+.wrap{width:min(var(--wrap),100% - 44px);margin-inline:auto}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.skip-link{position:absolute;left:12px;top:-60px;z-index:200;background:var(--deep);color:#fff;padding:10px 16px;border-radius:6px;font-size:.85rem;transition:top .2s var(--ease)}
+.skip-link:focus{top:12px}
+.concept-note{background:var(--tint);color:var(--accent-ink-d);font-size:.78rem;text-align:center;padding:8px 16px;position:relative;z-index:101}
+.concept-note a{color:inherit;font-weight:600;text-decoration:underline}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;letter-spacing:-.01em;color:var(--ink)}
+h1{font-size:clamp(2.35rem,5.3vw,4rem)} h2{font-size:clamp(1.7rem,3.4vw,2.5rem)} h3{font-size:clamp(1.15rem,2vw,1.4rem)}
+p{max-width:68ch}
+.eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--accent-ink);display:inline-flex;align-items:center;gap:9px;margin-bottom:16px}
+.eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--accent);flex:none}
+.lead{font-size:clamp(1.08rem,1.7vw,1.3rem);line-height:1.55;color:var(--text-mid)}
+/* four house buttons: primary + ghost on light stock, primary-light + ghost-light on dark stock.
+   Text on dark uses --accent-lt, never --accent (D16: --accent may be a mid-L real brand colour; it is a fill). */
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:11px 22px;border-radius:8px;font-family:var(--sans);font-size:.82rem;font-weight:600;letter-spacing:.02em;border:1.5px solid transparent;background:transparent;transition:background .2s var(--ease),border-color .2s var(--ease),color .2s var(--ease),transform .2s var(--ease)}
+.btn:hover{transform:translateY(-1px)} .btn .arw{font-family:var(--mono);transition:transform .2s var(--ease)} .btn:hover .arw{transform:translateX(3px)}
+.btn-primary{background:var(--accent-ink);color:#fff} .btn-primary:hover{background:var(--accent-ink-d)}
+.btn-ghost{border-color:var(--tint-2);color:var(--accent-ink)} .btn-ghost:hover{background:var(--tint);border-color:var(--accent-ink)}
+.btn-primary-light{background:var(--accent-lt);color:var(--deep)} .btn-primary-light:hover{background:var(--tint)}
+.btn-ghost-light{border-color:oklch(0.98 0.01 var(--Hn)/.4);color:#fff} .btn-ghost-light:hover{background:oklch(0.98 0.01 var(--Hn)/.1)}
+/* nav: opaque by rule (no translucency, no blur); markup is emitted by scaffold.mjs from page.json */
+.site-nav{position:sticky;top:0;z-index:100;background:var(--paper);border-bottom:1px solid var(--line);transition:box-shadow .3s var(--ease)}
+.site-nav.scrolled{box-shadow:0 6px 24px oklch(0.3 0.02 var(--Hn)/.07)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:72px;gap:20px}
+.nav-brand{display:flex;align-items:center;gap:12px;min-height:44px;min-width:0}
+.nav-logo{display:flex;align-items:center;flex:none}
+.nav-logo img{height:26px;width:auto}
+.nav-name{font-family:var(--serif);font-size:1.2rem;line-height:1.1;color:var(--ink)}
+.nav-tick{font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;color:var(--text-mid);border:1px solid var(--line);border-radius:5px;padding:4px 8px}
+.nav-links{display:flex;align-items:center;gap:24px;list-style:none}
+.nav-links a:not(.btn){font-size:.86rem;font-weight:500;color:var(--text-mid);transition:color .2s var(--ease)}
+.nav-links a:not(.btn):hover{color:var(--accent-ink)}
+.nav-links a.active{color:var(--ink);text-decoration:underline;text-underline-offset:7px;text-decoration-color:var(--accent);text-decoration-thickness:2px}
+.nav-burger{display:none;flex-direction:column;gap:5px;width:44px;height:44px;align-items:center;justify-content:center;background:none;border:none}
+.nav-burger span{width:22px;height:2px;background:var(--ink);border-radius:2px;transition:transform .25s var(--ease),opacity .2s}
+.nav-burger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-burger[aria-expanded="true"] span:nth-child(2){opacity:0}
+.nav-burger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+/* bands: FLAT FILLS, the floor only; page/surface.css must override them (verify FAILs flat pages) */
+main{display:block;overflow-x:clip}   /* a translated reveal or wide motif can never widen the page */
+main>section{padding:clamp(56px,8vw,104px) 0}
+.sec-white{background:var(--paper)} .sec-tint{background:var(--tint)}
+.sec-dark{background:var(--deep);color:oklch(0.9 0.008 var(--Hn))}
+.sec-dark h1,.sec-dark h2,.sec-dark h3{color:#fff} .sec-dark .eyebrow{color:var(--accent-lt)} .sec-dark .eyebrow::before{background:var(--accent)}
+.sec-dark .lead{color:oklch(0.86 0.01 var(--Hn))}
+.sec-head{max-width:660px;margin-bottom:clamp(36px,5vw,56px)} .sec-head p{margin-top:14px}
+/* data sits on its own plate: table.fin cells are transparent, never paint a band behind figures */
+.table-scroll{overflow-x:auto;border:1px solid var(--line);border-radius:10px;background:var(--card)}
+table.fin{width:100%;border-collapse:collapse;min-width:540px;font-size:.92rem}
+table.fin caption{text-align:left;font-family:var(--mono);font-size:.72rem;letter-spacing:.05em;text-transform:uppercase;color:var(--text-mid);padding:14px 20px;border-bottom:1px solid var(--line);background:var(--card)}
+table.fin th,table.fin td{text-align:left;padding:14px 20px;border-bottom:1px solid var(--line)}
+table.fin tbody tr:last-child td{border-bottom:none}
+table.fin td.num{font-family:var(--mono);text-align:right;color:var(--ink);font-weight:500}
+table.fin thead th{font-weight:700;color:var(--ink);background:var(--card)}
+footer{background:var(--deep);color:oklch(0.76 0.008 var(--Hn));padding:56px 0 28px}
+.fls{padding:32px 0 0;font-size:.78rem;line-height:1.7;color:oklch(0.68 0.008 var(--Hn));max-width:98ch} .fls b{color:oklch(0.85 0.01 var(--Hn))}
+.fls a{color:inherit;text-decoration:underline} .fls+.fls{padding-top:14px}
+.market-note{padding-top:18px;margin-top:18px;border-top:1px solid var(--line-d);font-size:.72rem;line-height:1.7;color:oklch(0.68 0.008 var(--Hn))}
+/* reveal: hidden only once motion.js has set html.js, so no-JS and JS failure show everything.
+   Direction variants set --reveal-from (components/motion-extra.css); stagger with style="--d:.08s". */
+.reveal{transition:opacity .65s var(--ease),transform .65s var(--ease);transition-delay:var(--d,0s)}
+.js .reveal:not(.in){opacity:0;transform:var(--reveal-from,translateY(20px))}
+/* motif pause: motion.js toggles .paused on #hero-motif off-screen, in a hidden tab, or via [data-motif-toggle] */
+.paused,.paused::before,.paused::after,.paused *,.paused *::before,.paused *::after{animation-play-state:paused!important}
+@media (max-width:900px){
+  .nav-burger{display:flex}
+  .nav-links{position:absolute;top:72px;left:0;right:0;flex-direction:column;align-items:flex-start;gap:2px;background:var(--paper);border-bottom:1px solid var(--line);padding:12px 22px 20px;opacity:0;transform:translateY(-10px);visibility:hidden;pointer-events:none;transition:opacity .28s var(--ease),transform .28s var(--ease),visibility .28s;box-shadow:0 16px 30px oklch(0.3 0.02 var(--Hn)/.08)}
+  .nav-links.open{opacity:1;transform:none;visibility:visible;pointer-events:auto}
+  .nav-links li{width:100%} .nav-links a:not(.btn){display:block;padding:12px 0} .nav-links .btn{margin-top:10px;display:inline-flex}
+}
+@media (max-width:768px){ .footer-links a,.contact-col a{min-height:44px;display:flex;align-items:center} }   /* 44px tap targets; (0,1,1) so layer.css can restyle */
+@media (prefers-reduced-motion:reduce){
+  *{scroll-behavior:auto!important}
+  .reveal{transition:none} .js .reveal:not(.in){opacity:1;transform:none}
+  .btn:hover{transform:none} [class*="motif"]{animation:none!important} [data-motif-toggle]{display:none}
+}
+/* print (D12): decoration off, every reveal shown, dark bands re-inked dark-on-white (backgrounds may not print).
+   A custom dark band must carry .sec-dark so this, its focus ring and its heading colour all apply. */
+@media print{
+  *,*::before,*::after{background-image:none!important;box-shadow:none!important;text-shadow:none!important;animation:none!important;transition:none!important}
+  .site-nav{position:static} .nav-burger,.skip-link,[data-motif-toggle]{display:none!important}
+  .js .reveal:not(.in){opacity:1!important;transform:none!important}
+  .sec-dark,.sec-dark *,.hero,.hero *,.snapshot,.snapshot *,footer,footer *{background-color:transparent!important;color:#111!important;border-color:#bbb!important}
+  .sec-white,.sec-tint,.sec-dark,footer{background-color:#fff!important;border-top:1px solid #bbb}
+  .btn{background:transparent!important;color:#111!important;border-color:#111!important}
+  .table-scroll{overflow:visible;background:#fff!important}
+  main>section{padding:28px 0}
+}
+/* forced colors: the UA repaints every band to Canvas, so bands get a system seam instead */
+@media (forced-colors:active){
+  .sec-white,.sec-tint,.sec-dark,footer{background-image:none;border-top:1px solid CanvasText}
+  .btn{border-color:ButtonText}
+  .nav-burger span{forced-color-adjust:none;background:CanvasText}
+  .table-scroll{border-color:CanvasText}
+}
+/* mc:component timeline */
+/* timeline: E7 press and filings timeline grouped by year, newest first. Band: light (.sec-white / .sec-tint).
+   Integrity: every href is a URL you observed (no constructed detail pages; fall back to the news index or EDGAR);
+   headlines exactly as filed. Sticky year top:96px clears the 72px nav. */
+.news-year{display:grid;grid-template-columns:96px 1fr;gap:0 24px;align-items:start;border-top:1px solid var(--line);padding:22px 0 0;margin-top:22px}
+.news-year:first-child{border-top:none;padding:0;margin-top:0}
+.news-yr{position:sticky;top:96px;font-family:var(--mono);font-size:.9rem;font-weight:600;color:var(--text-mid)}
+.news-list{list-style:none;display:grid}
+.news-item{display:grid;grid-template-columns:118px 1fr auto;gap:4px 18px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line)}
+.news-item:last-child{border-bottom:none}
+.news-item time{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text-mid)}
+.news-link{display:flex;align-items:center;gap:8px;min-height:44px;font-size:1rem;color:var(--ink);transition:color .2s var(--ease)}
+.news-link:hover{color:var(--accent-ink)}
+.news-link .arw{font-family:var(--mono);transition:transform .2s var(--ease)}
+.news-link:hover .arw{transform:translateX(3px)}
+.news-tag{justify-self:start;font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent-lo);padding:4px 8px;border-radius:4px}
+@media (max-width:640px){
+  .news-year{grid-template-columns:1fr;gap:12px}
+  .news-yr{position:static}
+  .news-item{grid-template-columns:1fr;gap:2px;padding:10px 0}
+}
+/* mc:component contact */
+/* contact: E9 IR contact grid. Band: either (light default, .sec-dark variant).
+   Integrity: headings are h3, never h4 (verify FAILs any h4); omit any unverified row (phone, transfer agent); the
+   EDGAR link is the edgar placeholder. The substrate gives .contact-col a its 44px min-height at <=768px. */
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.contact-col h3{font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-ink)}
+.contact-col a,.contact-col p,.contact-col address{display:block;margin-top:12px;font-style:normal;font-size:.95rem;line-height:1.6;color:var(--text)}
+.contact-col a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--tint-2);transition:color .2s var(--ease)}
+.contact-col a:hover{color:var(--accent-ink);text-decoration-color:var(--accent)}
+.sec-dark .contact-col h3{color:var(--accent-lt)}
+.sec-dark .contact-col a,.sec-dark .contact-col p,.sec-dark .contact-col address{color:oklch(0.82 0.008 var(--Hn))}
+.sec-dark .contact-col a{text-decoration-color:var(--line-d)}
+.sec-dark .contact-col a:hover{color:#fff;text-decoration-color:var(--accent)}
+/* mc:layer */
+/* ============================================================================
+   Cryo-Cell visible layer, shared by all nine pages (site.mjs copies it into each stage).
+   Archetype: prospectus. A filed document: a page head with a folio and a double rule, numbered parts with the
+   heading in the margin, ruled tables, source tags beside every figure.
+   Signature: the gauge, nine ticks under the head with ONE gold dot parked on the current page (the logo's dot).
+   Roles: --serif is JOST (display, light weights echo the thin wordmark), --sans is SOURCE SERIF 4 (text, tabular
+   figures), --mono is SPLINE SANS MONO (labels and citations).
+   Rules kept: every grid track is minmax(0,1fr); nothing under 300 weight; every animated class contains "motif".
+   ============================================================================ */
+
+/* ---------- type ---------- */
+body{font-family:var(--body);font-size:1.0625rem;line-height:1.62;font-variant-numeric:lining-nums tabular-nums;font-optical-sizing:auto}
+h1,h2,h3,.nav-links a,.btn,.nav-name{font-family:var(--disp)}
+h1{font-weight:300;letter-spacing:-.022em;line-height:1.04}
+h2{font-weight:400;letter-spacing:-.012em}
+h3{font-weight:500;letter-spacing:0}
+.btn{font-size:.9rem;font-weight:500;letter-spacing:.015em}
+.eyebrow{font-size:.7rem;letter-spacing:.16em}
+.eyebrow::before{background:var(--accent)}
+.lead{font-size:clamp(1.1rem,1.6vw,1.25rem)}
+strong,b{font-weight:600}
+a.tl{color:var(--accent-ink);text-decoration:underline;text-decoration-color:var(--accent-lt);text-underline-offset:3px;text-decoration-thickness:1.5px;transition:text-decoration-color .2s var(--ease),color .2s var(--ease)}
+a.tl:hover{color:var(--accent-ink-d);text-decoration-color:var(--accent-ink)}
+.sec-dark a.tl{color:var(--accent-lt);text-decoration-color:var(--line-d)}
+.sec-dark a.tl:hover{color:#fff;text-decoration-color:var(--accent-lt)}
+.mono{font-family:var(--mono);font-size:.78em;letter-spacing:.02em}
+
+/* ---------- nav: nine pages, eight links and the IR button on one line from 1000px up ---------- */
+.nav-logo img{height:34px;width:auto}
+.nav-inner{height:76px;gap:18px}
+.nav-links{gap:clamp(12px,1.55vw,22px)}
+.nav-links a:not(.btn){font-size:.82rem;font-weight:500;letter-spacing:.01em;padding:6px 0;white-space:nowrap}
+.nav-links a.active{text-decoration-color:var(--accent);text-underline-offset:9px}
+.nav-links .btn{min-height:40px;padding:9px 18px;font-size:.82rem}
+.site-nav{border-bottom-color:var(--line)}
+@media (max-width:900px){
+  .nav-inner{height:72px}
+  .nav-logo img{height:30px}
+  .nav-links{top:72px}
+  .nav-links a:not(.btn){font-size:1rem}
+}
+@media (min-width:901px) and (max-width:1060px){ .nav-links .btn{padding:9px 12px} .nav-logo img{height:30px} }
+
+/* ---------- page head: folio, double rule, h1, lede, in-page contents, then the gauge ---------- */
+.ph{padding-top:clamp(36px,5vw,64px);padding-bottom:clamp(34px,5vw,56px)}
+.ph-top{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:var(--mono);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-mid);padding-bottom:12px;border-bottom:3px double var(--rule)}
+.ph-top b{color:var(--ink);font-weight:600}
+.ph-grid{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:clamp(28px,5vw,72px);align-items:end;margin-top:clamp(26px,4vw,44px)}
+.ph h1{font-size:clamp(2.3rem,5vw,3.85rem);max-width:15ch}
+.ph-lede{margin-top:20px;font-size:clamp(1.08rem,1.5vw,1.22rem);line-height:1.55;color:var(--text-mid);max-width:56ch}
+.ph-toc{list-style:none;border-top:1px solid var(--line)}
+.ph-toc li{border-bottom:1px solid var(--line)}
+.ph-toc a{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:10px;align-items:baseline;min-height:44px;padding:10px 2px;font-family:var(--disp);font-size:.98rem;color:var(--ink);transition:color .2s var(--ease),padding-left .25s var(--ease)}
+.ph-toc a span{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--accent-ink)}
+.ph-toc a:hover{color:var(--accent-ink);padding-left:8px}
+.ph-toc-h{font-family:var(--mono);font-size:.68rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-mid);margin-bottom:8px}
+
+/* the gauge: nine ticks on a rail; the gold dot is parked on this page's tick (extra.js slides it in from the last) */
+.gauge{position:relative;margin-top:clamp(30px,4.4vw,50px);padding-top:24px}
+.gauge ol{list-style:none;display:grid;grid-template-columns:repeat(9,minmax(0,1fr));border-top:2px solid var(--ink)}
+.gauge li{position:relative}
+.gauge li::before{content:'';position:absolute;left:0;top:-2px;width:1px;height:11px;background:var(--ink)}
+.gauge li:last-child::after{content:'';position:absolute;right:0;top:-2px;width:1px;height:11px;background:var(--ink)}
+.gauge a{display:block;min-height:44px;padding:13px 6px 0 7px;font-family:var(--disp);font-size:.8rem;font-weight:500;line-height:1.15;color:var(--text-mid);transition:color .2s var(--ease)}
+.gauge a:hover{color:var(--accent-ink)}
+.gauge .g-n{display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;color:var(--text-mid);margin-bottom:3px}
+.gauge li.here a{color:var(--ink)}
+.gauge li.here .g-n{color:var(--accent-ink)}
+.gauge-motif-dot{position:absolute;top:17px;left:calc(var(--i) * 100% / 9);width:14px;height:14px;margin-left:-7px;border-radius:50%;background:radial-gradient(circle at 50% 50%,#fff 0,var(--gold) 78%);border:1.5px solid oklch(0.66 0.14 92.3);box-shadow:0 0 0 0 oklch(0.89 0.155 92.3 / .6);animation:gd-halo 3.8s ease-out infinite;pointer-events:none}
+.gauge-motif-dot.slide{animation:gd-slide 1s var(--ease),gd-halo 3.8s ease-out 1s infinite}
+@keyframes gd-slide{from{left:calc(var(--from) * 100% / 9)}}
+@keyframes gd-halo{0%{box-shadow:0 0 0 0 oklch(0.89 0.155 92.3 / .6)}70%,100%{box-shadow:0 0 0 13px oklch(0.89 0.155 92.3 / 0)}}
+.gauge-here{display:none;margin-top:10px;font-family:var(--disp);font-size:1rem;color:var(--ink)}
+.gauge-here span{font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;color:var(--accent-ink);margin-right:8px}
+
+/* ---------- numbered parts (the prospectus clause grid) ---------- */
+.part{display:grid;grid-template-columns:minmax(0,240px) minmax(0,1fr);gap:clamp(22px,4vw,56px);padding:clamp(34px,5vw,58px) 0;border-top:3px double var(--rule)}
+.part:first-child{border-top:none;padding-top:0}
+.part:last-child{padding-bottom:0}
+.part-k{align-self:start}
+.pn{display:block;font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.14em;color:var(--accent-ink);margin-bottom:10px}
+.sec-dark .pn{color:var(--accent-lt)}
+.part-k h2{font-size:clamp(1.3rem,2vw,1.65rem);line-height:1.15}
+.part-k .mn{margin-top:12px;font-size:.86rem;line-height:1.5;color:var(--text-mid);max-width:30ch}
+.sec-dark .part-k .mn{color:oklch(0.8 0.01 var(--Hn))}
+.part-b>*+*{margin-top:1.05em}
+.part-b>h3{margin-top:2em;font-size:1.15rem}
+.part-b p{font-size:1.03rem;max-width:66ch}
+.part-b ul.bl{list-style:none;display:grid;gap:10px}
+.part-b ul.bl li{position:relative;padding-left:22px;max-width:66ch}
+.part-b ul.bl li::before{content:'';position:absolute;left:2px;top:.72em;width:9px;height:1.5px;background:var(--accent-ink)}
+.sec-dark .part-b ul.bl li::before{background:var(--accent-lt)}
+@media (min-width:901px){ .part-k{position:sticky;top:96px} }
+@media (max-width:900px){
+  .ph-grid{grid-template-columns:minmax(0,1fr);align-items:start}
+  .part{grid-template-columns:minmax(0,1fr);gap:16px}
+  .part-k .mn{max-width:56ch}
+}
+
+/* ---------- provenance: five tags, one grammar. Filed is solid, company figure is outlined, company statement is dashed,
+              computed is a tint plate, as cited is underlined. Tags always carry a word, never colour alone. ---------- */
+.tg{display:inline-block;vertical-align:.14em;font-family:var(--mono);font-size:.6rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;line-height:1;padding:4px 7px 3px;border-radius:3px;white-space:nowrap;margin:0 2px}
+.tg-f{background:var(--accent-ink-d);color:#fff}
+.tg-co{color:var(--accent-ink);border:1px solid var(--accent-ink);background:var(--accent-lo)}
+.tg-cs{color:var(--accent-ink);border:1px dashed var(--accent-ink)}
+.tg-cm{background:var(--tint-2);color:var(--ink)}
+.tg-ac{color:var(--text-mid);border-bottom:1.5px solid var(--text-mid);border-radius:0;padding-inline:1px}
+.sec-dark .tg-f{background:var(--accent-lt);color:var(--deep)}
+.sec-dark .tg-co{color:var(--accent-lt);border-color:var(--accent-lt);background:oklch(0.98 0.01 var(--Hn) / .06)}
+.sec-dark .tg-cs{color:var(--accent-lt);border-color:var(--accent-lt)}
+.sec-dark .tg-cm{background:oklch(0.98 0.01 var(--Hn) / .14);color:#fff}
+.sec-dark .tg-ac{color:oklch(0.82 0.01 var(--Hn));border-bottom-color:oklch(0.82 0.01 var(--Hn))}
+.src{font-family:var(--mono);font-size:.7rem;letter-spacing:.03em;color:var(--accent-ink);text-decoration:underline;text-decoration-color:var(--accent-lt);text-underline-offset:3px;white-space:nowrap}
+.src:hover{color:var(--accent-ink-d);text-decoration-color:var(--accent-ink)}
+.sec-dark .src{color:var(--accent-lt);text-decoration-color:var(--line-d)}
+.sec-dark .src:hover{color:#fff}
+.basis{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;font-family:var(--mono);font-size:.7rem;letter-spacing:.03em;color:var(--text-mid)}
+.sec-dark .basis{color:oklch(0.82 0.01 var(--Hn))}
+
+/* ---------- figures, snapshot, notice ---------- */
+.snap{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:clamp(18px,2.4vw,30px)}
+.snap-i{border-top:2px solid var(--ink);padding-top:14px;display:grid;gap:6px;align-content:start}
+.snap-n{font-family:var(--disp);font-weight:300;font-size:clamp(1.9rem,3vw,2.55rem);line-height:1;letter-spacing:-.02em;color:var(--ink);font-variant-numeric:lining-nums tabular-nums}
+.snap-l{font-size:.92rem;line-height:1.4;color:var(--text)}
+.snap-i .basis{margin-top:2px}
+.sec-dark .snap-i{border-top-color:oklch(0.98 0.01 var(--Hn) / .5)}
+.sec-dark .snap-n{color:#fff}
+.sec-dark .snap-l{color:oklch(0.86 0.01 var(--Hn))}
+.notice{position:relative;border:1px solid var(--ink);background:var(--card);padding:clamp(20px,3vw,34px);box-shadow:6px 6px 0 var(--tint-2)}
+.notice-h{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink);padding-bottom:12px;border-bottom:3px double var(--rule);margin-bottom:6px}
+.notice ol{list-style:none;counter-reset:nt;display:grid}
+.notice li{counter-increment:nt;display:grid;grid-template-columns:2.2em minmax(0,1fr);gap:6px;padding:16px 0;border-bottom:1px solid var(--line)}
+.notice li:last-child{border-bottom:none;padding-bottom:0}
+.notice li::before{content:counter(nt);font-family:var(--mono);font-size:.74rem;font-weight:600;color:var(--accent-ink);padding-top:.34em}
+.notice li b{display:block;font-family:var(--disp);font-size:1.12rem;font-weight:500;color:var(--ink);margin-bottom:3px}
+.notice li p{font-size:.98rem;max-width:none}
+.note{border-top:2px solid var(--accent);padding:12px 0 0;font-size:.96rem;color:var(--text);max-width:66ch}
+.sec-dark .note{border-top-color:var(--accent-lt);color:oklch(0.88 0.008 var(--Hn))}
+.note b{font-family:var(--disp);font-weight:500;color:var(--ink)}
+.sec-dark .note b{color:#fff}
+
+/* ---------- cards and grids ---------- */
+.cols2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(18px,3vw,36px)}
+.cols3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.4vw,28px)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:clamp(14px,2vw,22px)}
+.card{position:relative;display:flex;flex-direction:column;gap:8px;background:var(--card);border:1px solid var(--line);border-top:2px solid var(--accent);padding:22px 22px 20px;transition:transform .3s var(--ease),border-color .3s var(--ease),box-shadow .3s var(--ease)}
+a.card:hover{transform:translateY(-3px);border-color:var(--accent-ink);box-shadow:0 14px 30px oklch(0.3 0.02 var(--Hn) / .08)}
+.card .cn{font-family:var(--disp);font-weight:300;font-size:2rem;line-height:1;color:var(--accent-ink);letter-spacing:-.02em}
+.card h3{font-size:1.22rem}
+.card p{font-size:.95rem;color:var(--text);max-width:none}
+.card .go{margin-top:auto;padding-top:8px;font-family:var(--mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent-ink)}
+.card .go i{font-style:normal;display:inline-block;transition:transform .25s var(--ease)}
+a.card:hover .go i{transform:translateX(4px)}
+.card.plain{border-top-color:var(--line-d)}
+.sec-dark .card{background:oklch(0.98 0.01 var(--Hn) / .05);border-color:oklch(0.98 0.01 var(--Hn) / .16);border-top-color:var(--accent-lt)}
+.sec-dark .card h3{color:#fff}
+.sec-dark .card p{color:oklch(0.86 0.01 var(--Hn))}
+.rule-h{font-family:var(--mono);font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--text-mid);padding:0 0 10px;border-bottom:1px solid var(--ink);margin-bottom:6px}
+
+/* definition rows: a ruled key/value list used for facts, dates, addresses */
+.kv{display:grid;border-top:1px solid var(--ink)}
+.kv>div{display:grid;grid-template-columns:minmax(0,15em) minmax(0,1fr);gap:4px 22px;padding:12px 0;border-bottom:1px solid var(--line)}
+.kv dt{font-family:var(--mono);font-size:.72rem;letter-spacing:.07em;text-transform:uppercase;color:var(--text-mid);padding-top:.35em}
+.kv dd{font-size:1rem;max-width:none}
+.kv dd .tg{margin-left:6px}
+.sec-dark .kv{border-top-color:oklch(0.98 0.01 var(--Hn) / .5)}
+.sec-dark .kv>div{border-bottom-color:var(--line-d)}
+.sec-dark .kv dt{color:oklch(0.8 0.01 var(--Hn))}
+@media (max-width:640px){ .kv>div{grid-template-columns:minmax(0,1fr);gap:2px} }
+
+/* a trail: dated rows with a spine, for the listing notice and the Duke hearing dates */
+.trail{list-style:none;position:relative;display:grid;gap:0;margin-top:6px}
+.trail::before{content:'';position:absolute;left:5px;top:10px;bottom:10px;width:1px;background:var(--line-d)}
+.trail li{position:relative;display:grid;grid-template-columns:minmax(0,9.5em) minmax(0,1fr);gap:4px 20px;padding:12px 0 12px 26px}
+.trail li::before{content:'';position:absolute;left:0;top:1.08em;width:11px;height:11px;border-radius:50%;background:var(--paper);border:2px solid var(--accent-ink)}
+.trail time{font-family:var(--mono);font-size:.74rem;letter-spacing:.05em;text-transform:uppercase;color:var(--text-mid);padding-top:.3em}
+.trail li>div{max-width:62ch}
+.trail li b{font-family:var(--disp);font-weight:500;color:var(--ink)}
+.sec-dark .trail::before{background:var(--line-d)}
+.sec-dark .trail li::before{background:var(--deep-2);border-color:var(--accent-lt)}
+.sec-dark .trail time{color:oklch(0.8 0.01 var(--Hn))}
+.sec-dark .trail li b{color:#fff}
+.trail li.open::before{background:var(--accent-lt);border-color:var(--accent-ink)}
+@media (max-width:640px){ .trail li{grid-template-columns:minmax(0,1fr)} }
+
+/* ---------- tables (all inside .table-scroll; figures right-aligned in the mono face) ---------- */
+table.fin{font-size:.93rem;min-width:520px}
+table.fin caption{font-size:.7rem;letter-spacing:.08em}
+table.fin th,table.fin td{padding:11px 16px;vertical-align:baseline}
+table.fin td.num,table.fin th.num{font-family:var(--mono);font-size:.84rem;font-weight:400;text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
+table.fin thead th{font-family:var(--mono);font-size:.68rem;font-weight:500;letter-spacing:.09em;text-transform:uppercase;color:var(--text-mid);border-bottom:1px solid var(--ink)}
+table.fin th[scope=row]{font-weight:400;color:var(--text)}
+table.fin tr.tot td,table.fin tr.tot th{font-weight:600;border-top:1px solid var(--ink);color:var(--ink)}
+table.fin tr.tot td.num{font-weight:500}
+table.fin tr.sub th{padding-left:34px;color:var(--text-mid);font-size:.9rem}
+table.fin tr.sub td{color:var(--text-mid)}
+table.fin tr.hl td,table.fin tr.hl th{background:var(--tint)}
+table.fin td .tg{margin-left:8px}
+.table-scroll{margin-top:1.1em;box-shadow:4px 4px 0 var(--tint-2)}
+.table-scroll:first-child{margin-top:0}
+.tnote{margin-top:10px;font-size:.84rem;line-height:1.5;color:var(--text-mid);max-width:72ch}
+.sec-dark .table-scroll{background:oklch(0.235 0.008 var(--Hn));border-color:oklch(0.98 0.01 var(--Hn) / .2);box-shadow:none}
+.sec-dark table.fin caption{background:transparent;color:oklch(0.84 0.01 var(--Hn));border-bottom-color:var(--line-d)}
+.sec-dark table.fin thead th{background:transparent;color:oklch(0.84 0.01 var(--Hn));border-bottom-color:oklch(0.98 0.01 var(--Hn) / .5)}
+.sec-dark table.fin th,.sec-dark table.fin td{border-bottom-color:var(--line-d);color:oklch(0.9 0.008 var(--Hn))}
+.sec-dark table.fin td.num{color:#fff}
+.sec-dark table.fin tr.tot td,.sec-dark table.fin tr.tot th{color:#fff;border-top-color:oklch(0.98 0.01 var(--Hn) / .5)}
+.sec-dark .tnote{color:oklch(0.8 0.01 var(--Hn))}
+@media (max-width:640px){ table.fin th,table.fin td{padding:10px 12px} }
+
+/* ---------- charts: HTML bars (real text, wraps on phones) and one SVG series in a scroll frame ---------- */
+.chart-scroll{overflow-x:auto;border:1px solid var(--line);background:var(--card);padding:14px 10px 6px;box-shadow:4px 4px 0 var(--tint-2)}
+.chart{display:block;min-width:600px;width:100%;height:auto}
+.chart text{font-family:var(--mono);font-size:12px;fill:var(--text-mid)}
+.chart .ax{stroke:var(--line-d);stroke-width:1}
+.chart .gr{stroke:var(--line);stroke-width:1;stroke-dasharray:2 4}
+.chart .zr{stroke:var(--ink);stroke-width:1.5}
+.chart .ln{fill:none;stroke:var(--accent-ink);stroke-width:2.5;stroke-linejoin:round;stroke-linecap:round}
+.chart .pt{fill:var(--paper);stroke:var(--accent-ink);stroke-width:2}
+.chart .pt-now{fill:var(--gold);stroke:oklch(0.62 0.14 92.3);stroke-width:2}
+.chart .bp{fill:var(--accent-ink)}
+.chart .bn{fill:var(--ink)}
+.chart .lb{fill:var(--ink);font-weight:500}
+.chart .yl{font-size:11px;letter-spacing:.04em}
+.chart .cap{font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.wf{display:grid;border-top:1px solid var(--ink)}
+.wf-r{display:grid;grid-template-columns:minmax(0,15em) minmax(0,1fr) minmax(0,7.5em);gap:6px 16px;align-items:center;padding:9px 0;border-bottom:1px solid var(--line)}
+.wf-l{font-size:.93rem;line-height:1.3}
+.wf-l small{display:block;font-family:var(--mono);font-size:.64rem;letter-spacing:.06em;color:var(--text-mid);text-transform:uppercase;margin-top:2px}
+.wf-t{position:relative;height:16px;background:linear-gradient(to right,var(--line) 1px,transparent 1px) 0 0/10% 100%}
+.wf-t i{position:absolute;top:2px;bottom:2px;left:var(--a);width:var(--w);background:var(--accent-ink);border-radius:1px}
+.wf-t i.up{background:var(--accent)}
+.wf-t i.dn{background:var(--ink)}
+.wf-t i.imp{background:repeating-linear-gradient(135deg,var(--ink) 0 3px,var(--paper) 3px 5px);outline:1px solid var(--ink)}
+.wf-t i.end{background:var(--ink)}
+.wf-t b{position:absolute;top:0;bottom:0;left:var(--z);width:1px;background:var(--ink)}
+.wf-v{font-family:var(--mono);font-size:.82rem;text-align:right;color:var(--ink);white-space:nowrap}
+.wf-r.tot .wf-l{font-weight:600;color:var(--ink)}
+.wf-r.tot .wf-v{font-weight:600}
+@media (max-width:640px){
+  .wf-r{grid-template-columns:minmax(0,1fr) minmax(0,6.6em);grid-template-areas:"l v" "t t"}
+  .wf-l{grid-area:l} .wf-v{grid-area:v} .wf-t{grid-area:t}
+}
+.own{list-style:none;display:grid;border-top:1px solid var(--ink)}
+.own li{display:grid;grid-template-columns:minmax(0,18em) minmax(0,1fr) 5.2em;gap:6px 18px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line)}
+.own-n{font-size:.96rem;line-height:1.3}
+.own-n small{display:block;font-family:var(--mono);font-size:.64rem;letter-spacing:.05em;color:var(--text-mid);text-transform:uppercase;margin-top:2px}
+.own-b{height:12px;background:var(--tint);position:relative}
+.own-b i{position:absolute;inset:0 auto 0 0;width:var(--w);background:var(--accent-ink)}
+.own li.grp .own-b i{background:var(--ink)}
+.own-p{font-family:var(--mono);font-size:.84rem;text-align:right;color:var(--ink)}
+@media (max-width:640px){
+  .own li{grid-template-columns:minmax(0,1fr) 4.6em;grid-template-areas:"n p" "b b"}
+  .own-n{grid-area:n} .own-p{grid-area:p} .own-b{grid-area:b}
+}
+
+/* ---------- the overview hero: cold rings hold the single stat; the gold dot is their centre ---------- */
+.hero{padding:clamp(40px,6vw,84px) 0 clamp(44px,6vw,84px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);gap:clamp(28px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(2.35rem,5.2vw,4.1rem);max-width:15ch;color:#fff;font-weight:300}
+.hero .ph-lede{color:oklch(0.88 0.01 var(--Hn));max-width:54ch}
+.hero .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.hero .basis{margin-top:22px}
+.hero-fig{position:relative;width:min(100%,470px);aspect-ratio:1;margin-inline:auto}
+.hero-rings{position:absolute;inset:0;width:100%;height:100%}
+.rg{fill:none;stroke:var(--accent-lt);stroke-width:1}
+.rg-1{opacity:.55}.rg-2{opacity:.4}.rg-3{opacity:.3}.rg-4{opacity:.22}.rg-5{opacity:.15}
+.rg-tick{fill:none;stroke:var(--accent-lt);stroke-width:7;stroke-dasharray:1 12.1;opacity:.5}
+.rg-motif-spin{transform-origin:260px 260px;animation:rg-spin 160s linear infinite}
+.rg-motif-spin-r{transform-origin:260px 260px;animation:rg-spin 240s linear infinite reverse}
+.rg-motif-pulse{fill:none;stroke:var(--gold);stroke-width:1.2;opacity:0;transform-origin:260px 260px;animation:rg-pulse 6s ease-out infinite}
+.rg-motif-pulse.p2{animation-delay:-3s}
+.rg-dot{fill:var(--gold)}
+.rg-glow{fill:oklch(0.89 0.155 92.3 / .22)}
+.rg-motif-glow{transform-origin:260px 260px;animation:rg-breathe 5s ease-in-out infinite}
+@keyframes rg-spin{to{transform:rotate(360deg)}}
+@keyframes rg-pulse{0%{opacity:.7;transform:scale(.12)}100%{opacity:0;transform:scale(1)}}
+@keyframes rg-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.35)}}
+.hero-stat{position:absolute;inset:0;display:grid;align-content:start;justify-items:center;text-align:center;padding:57% 14% 0;gap:6px}
+.hero-n{font-family:var(--disp);font-weight:300;font-size:clamp(2.6rem,6.6vw,4.4rem);line-height:1;letter-spacing:-.03em;color:#fff;font-variant-numeric:lining-nums tabular-nums}
+.hero-sl{font-family:var(--disp);font-size:clamp(.92rem,1.5vw,1.04rem);line-height:1.3;color:oklch(0.9 0.01 var(--Hn));max-width:15em}
+.hero-sl+.tg{margin-top:8px}
+.hero-cap{margin-top:14px;text-align:center;font-family:var(--mono);font-size:.64rem;letter-spacing:.06em;color:oklch(0.78 0.01 var(--Hn));max-width:46ch;margin-inline:auto;line-height:1.55}
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:minmax(0,1fr)}
+  .hero-fig{width:min(100%,420px)}
+}
+
+/* ---------- compartment unit and process drawings (Business) ---------- */
+.fig-draw{border:1px solid var(--line);background:var(--card);padding:clamp(14px,2.4vw,26px);box-shadow:4px 4px 0 var(--tint-2)}
+.fig-draw svg{width:100%;height:auto}
+.fig-draw figcaption{margin-top:12px;font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;color:var(--text-mid);line-height:1.55}
+.fd{fill:none;stroke:var(--ink);stroke-width:1.5}
+.fd-fill{fill:var(--accent-lo);stroke:var(--accent-ink);stroke-width:1.5}
+.fd-dot{fill:var(--gold);stroke:oklch(0.62 0.14 92.3);stroke-width:1.5}
+.fd-t{font-family:var(--disp);font-size:15px;font-weight:500;fill:var(--ink)}
+.fd-s{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;fill:var(--text-mid);text-transform:uppercase}
+.fd-arrow{fill:none;stroke:var(--accent-ink);stroke-width:1.5}
+.fd-arrow-h{fill:var(--accent-ink)}
+.fd-motif-flow{stroke-dasharray:5 7;animation:fd-flow 14s linear infinite}
+@keyframes fd-flow{to{stroke-dashoffset:-144}}
+.steps{list-style:none;counter-reset:st;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:0;border-top:2px solid var(--ink)}
+.steps li{counter-increment:st;position:relative;padding:16px 18px 6px 0}
+.steps li::before{content:counter(st,decimal-leading-zero);display:block;font-family:var(--mono);font-size:.72rem;letter-spacing:.12em;color:var(--accent-ink);margin-bottom:6px}
+.steps li b{display:block;font-family:var(--disp);font-weight:500;font-size:1.08rem;color:var(--ink);margin-bottom:4px}
+.steps li p{font-size:.93rem;max-width:30ch}
+
+/* ---------- chips for the list of accreditations and places ---------- */
+.chips{list-style:none;display:flex;flex-wrap:wrap;gap:8px}
+.chips li{font-family:var(--mono);font-size:.74rem;letter-spacing:.04em;padding:7px 11px;border:1px solid var(--line-d);background:var(--card);color:var(--ink)}
+.sec-dark .chips li{background:transparent;border-color:var(--line-d);color:#fff}
+
+/* ---------- filed record (timeline component adapted) ---------- */
+.news-year{grid-template-columns:96px minmax(0,1fr);border-top-color:var(--rule)}
+.news-yr{font-family:var(--disp);font-weight:300;font-size:2rem;letter-spacing:-.02em;color:var(--ink)}
+.news-item{grid-template-columns:118px minmax(0,1fr) auto}
+.news-link{font-size:1rem;line-height:1.35;padding:4px 0}
+.news-tag{background:var(--accent-ink-d);color:#fff;font-weight:500}
+.news-item time{font-size:.72rem}
+.news-link span.sub{display:block;font-family:var(--mono);font-size:.68rem;letter-spacing:.04em;color:var(--text-mid);margin-top:2px}
+@media (max-width:640px){
+  .news-year{grid-template-columns:minmax(0,1fr)}
+  .news-yr{font-size:1.6rem}
+}
+.fdim{list-style:none;display:grid}
+.fdim li{display:grid;grid-template-columns:minmax(0,9em) minmax(0,1fr) auto;gap:4px 18px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--line)}
+.fdim li:first-child{border-top:1px solid var(--ink)}
+.fdim time{font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--text-mid)}
+@media (max-width:640px){ .fdim li{grid-template-columns:minmax(0,1fr)} }
+
+/* ---------- contact (component adapted) ---------- */
+.contact-grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:32px 36px}
+.contact-col h3{font-size:.72rem}
+.contact-col a,.contact-col p,.contact-col address{font-size:1rem}
+
+/* ---------- pager: the same close on every page, previous and next in the ink-blue stock ---------- */
+.pager{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,40px)}
+.pager a{display:grid;gap:6px;min-height:88px;padding:18px 0;border-top:1px solid oklch(1 0 0 / .45);color:#fff;transition:padding .3s var(--ease),border-color .3s var(--ease)}
+.pager a:hover{border-top-color:#fff}
+.pager .pg-k{font-family:var(--mono);font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:oklch(0.95 0.02 var(--Hn))}
+.pager .pg-t{font-family:var(--disp);font-weight:300;font-size:clamp(1.6rem,3.4vw,2.5rem);line-height:1.05;letter-spacing:-.02em}
+.pager .pg-n{text-align:right}
+.pager .pg-n:hover{padding-right:8px}
+.pager .pg-p:hover{padding-left:8px}
+.pager .pg-s{font-size:.95rem;color:oklch(0.93 0.02 var(--Hn));max-width:34ch}
+.pager .pg-n .pg-s{justify-self:end}
+.pager .pg-none{border-top-color:transparent;pointer-events:none}
+@media (max-width:640px){ .pager{grid-template-columns:minmax(0,1fr)} .pager .pg-n{text-align:left} .pager .pg-n .pg-s{justify-self:start} }
+
+/* ---------- footer: logo, sitemap of all nine pages, method note ---------- */
+.foot-brand img{height:36px;width:auto;margin-bottom:22px}
+.foot-map{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:4px 24px;padding:6px 0 24px;border-top:1px solid var(--line-d);border-bottom:1px solid var(--line-d);margin-bottom:22px}
+.foot-map a{display:flex;align-items:center;gap:10px;min-height:44px;font-family:var(--disp);font-size:.95rem;color:oklch(0.9 0.008 var(--Hn))}
+.foot-map a span{font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;color:var(--accent-lt)}
+.foot-map a:hover{color:#fff}
+.footer-links{list-style:none;display:flex;flex-wrap:wrap;gap:2px 28px;margin-bottom:18px}
+.footer-links a{font-size:.9rem;text-decoration:underline;text-decoration-color:var(--line-d);text-underline-offset:4px;color:oklch(0.9 0.008 var(--Hn))}
+.footer-links a:hover{color:#fff;text-decoration-color:var(--accent-lt)}
+.method{font-size:.82rem;line-height:1.7;color:oklch(0.78 0.008 var(--Hn));max-width:98ch}
+
+/* ---------- reveal: the part body rises a little, tables and figures follow ---------- */
+.reveal{--reveal-from:translateY(16px)}
+
+/* ---------- reduced motion: pseudo-element and box-shadow motion has no [class*=motif] kill of its own ---------- */
+@media (prefers-reduced-motion:reduce){
+  .gauge-motif-dot,.gauge-motif-dot.slide{animation:none}
+  a.card:hover,.btn:hover{transform:none}
+}
+
+/* ---------- small screens ---------- */
+@media (max-width:900px){
+  .cols2,.cols3{grid-template-columns:minmax(0,1fr)}
+}
+@media (max-width:760px){
+  .gauge a{font-size:0;padding:13px 0 0 5px}
+  .gauge .g-n{font-size:.62rem;margin:0}
+  .gauge-here{display:block}
+}
+@media (max-width:640px){
+  body{font-size:1.02rem}
+  .ph h1{max-width:none}
+  .notice{box-shadow:4px 4px 0 var(--tint-2)}
+  .hero-stat{padding-top:57%}
+  .notice li{grid-template-columns:1.7em minmax(0,1fr)}
+  .notice{padding:16px 14px}
+}
+
+/* ---------- additions after the first build ---------- */
+.nl-t{display:block;flex:1;min-width:0}
+.table-scroll table.fin td.tx,.table-scroll table.fin th.tx{text-align:left;font-family:var(--body);font-size:.92rem;white-space:normal;font-variant-numeric:lining-nums tabular-nums}
+table.fin small.mono{display:block;margin-top:2px;color:var(--text-mid);font-size:.68rem;letter-spacing:.04em;text-transform:uppercase}
+
+/* liabilities stack: three segments of one bar, real labels (no growth animation, widths are filed ratios) */
+.stack{display:flex;width:100%;min-height:58px;border:1px solid var(--ink);background:var(--card)}
+.stack span{display:flex;flex-direction:column;justify-content:center;gap:2px;width:var(--w);min-width:0;padding:8px 10px;overflow:hidden}
+.stack b{font-family:var(--mono);font-size:.64rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap}
+.stack i{font-style:normal;font-family:var(--disp);font-size:1.05rem;font-weight:500}
+.sk-a{background:var(--accent-ink);color:#fff}
+.sk-b{background:var(--accent-lt);color:var(--deep)}
+.sk-c{background:var(--tint-2);color:var(--ink)}
+@media (max-width:640px){ .stack b{font-size:.58rem;letter-spacing:.03em} .stack span{padding:8px 6px} }
+
+/* gauge on a dark band (the overview hero) */
+.sec-dark .gauge ol{border-top-color:oklch(0.98 0.01 var(--Hn) / .7)}
+.sec-dark .gauge li::before,.sec-dark .gauge li:last-child::after{background:oklch(0.98 0.01 var(--Hn) / .7)}
+.sec-dark .gauge a{color:oklch(0.86 0.01 var(--Hn))}
+.sec-dark .gauge a:hover,.sec-dark .gauge li.here a{color:#fff}
+.sec-dark .gauge .g-n{color:oklch(0.8 0.01 var(--Hn))}
+.sec-dark .gauge li.here .g-n{color:var(--accent-lt)}
+.sec-dark .gauge-here{color:#fff}
+.sec-dark .gauge-here span{color:var(--accent-lt)}
+.hero .gauge{margin-top:clamp(36px,5vw,64px)}
+
+/* the held step: the gold dot rests on STORE */
+.steps li.held p{position:relative}
+.step-motif-dot{position:absolute;right:2px;top:-30px;width:12px;height:12px;border-radius:50%;background:radial-gradient(circle,#fff 0,var(--gold) 78%);border:1.5px solid oklch(0.66 0.14 92.3);box-shadow:0 0 0 0 oklch(0.89 0.155 92.3 / .6);animation:gd-halo 3.8s ease-out infinite}
+.steps li.held{position:relative}
+
+/* the disagreement table: three columns on a desk, stacked blocks on a phone */
+table.fin.dis{min-width:760px}
+table.fin.dis td,table.fin.dis th{vertical-align:top;white-space:normal;line-height:1.5}
+table.fin.dis th[scope=row]{font-family:var(--disp);font-weight:500;color:var(--ink);width:11em}
+table.fin.dis td{font-size:.92rem;max-width:34em}
+@media (max-width:760px){
+  table.fin.dis{min-width:0}
+  table.fin.dis thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  table.fin.dis,table.fin.dis tbody,table.fin.dis tr,table.fin.dis th,table.fin.dis td{display:block;width:100%}
+  table.fin.dis tr{padding:14px 0;border-bottom:1px solid var(--line-d)}
+  table.fin.dis tbody tr:last-child{border-bottom:none}
+  table.fin.dis th[scope=row]{border:0;padding:0 14px 6px;width:100%}
+  table.fin.dis td{border:0;padding:6px 14px;max-width:none}
+  table.fin.dis td::before{content:attr(data-l);display:block;font-family:var(--mono);font-size:.62rem;letter-spacing:.1em;text-transform:uppercase;color:var(--text-mid);margin-bottom:2px}
+}
+
+/* pager band: a compact close, not a full-height section */
+main>section.pager-band{padding:clamp(26px,4vw,44px) 0}
+.hero h1{max-width:16ch}
+
+/* sources sit side by side: a middle dot between adjacent links */
+.src+.src::before{content:"\00b7";display:inline-block;margin:0 .55em 0 .1em;text-decoration:none;color:var(--text-mid)}
+.sec-dark .src+.src::before{color:oklch(0.8 0.01 var(--Hn))}
+/* layout variants for 6 and 8 items */
+.snap.c3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.cards.c4{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:1000px){ .cards.c4{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:760px){ .snap.c3{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:640px){ .cards.c4,.snap.c3{grid-template-columns:minmax(0,1fr)} }
+.cards.c4 .card{padding:18px 16px 16px}
+.cards.c4 .card h3{font-size:1.12rem}
+.cards.c4 .card p{font-size:.9rem}
+/* tighter bands than the substrate's 104px ceiling */
+main>section{padding:clamp(44px,6vw,80px) 0}
+main>section.hero{padding:clamp(40px,6vw,84px) 0 clamp(36px,5vw,64px)}
+/* pager arrows */
+.pager .pg-n .pg-t::after{content:"\2192";margin-left:.35em;font-weight:300}
+.pager .pg-p .pg-t::before{content:"\2190";margin-right:.35em;font-weight:300}
+
+/* segment and wide tables: header may wrap, the first column has room, descriptors read as small body text */
+table.fin thead th{white-space:normal;vertical-align:bottom;line-height:1.3}
+table.fin th[scope=row]{min-width:11.5em}
+table.fin th[scope=row] small.mono{font-family:var(--body);text-transform:none;letter-spacing:0;font-size:.78rem;line-height:1.35;margin-top:3px}
+.part-b p+p,.cols2 p+p{margin-top:1em}
+.wf-r{grid-template-columns:minmax(0,13em) minmax(0,1fr) minmax(0,6.6em)}
+
+/* design pass: monumental type (specimen scale) */
+/* 1. folio numeral: the page's own number, drawn by a counter, at specimen size */
+@supports selector(:has(a)){
+  .ph:has(.gauge li:nth-child(1).here){counter-reset:folio 1}
+  .ph:has(.gauge li:nth-child(2).here){counter-reset:folio 2}
+  .ph:has(.gauge li:nth-child(3).here){counter-reset:folio 3}
+  .ph:has(.gauge li:nth-child(4).here){counter-reset:folio 4}
+  .ph:has(.gauge li:nth-child(5).here){counter-reset:folio 5}
+  .ph:has(.gauge li:nth-child(6).here){counter-reset:folio 6}
+  .ph:has(.gauge li:nth-child(7).here){counter-reset:folio 7}
+  .ph:has(.gauge li:nth-child(8).here){counter-reset:folio 8}
+  .ph:has(.gauge li:nth-child(9).here){counter-reset:folio 9}
+  .ph-grid{row-gap:clamp(14px,2vw,26px)}
+  .ph-grid::before{
+    content:counter(folio,decimal-leading-zero);
+    content:counter(folio,decimal-leading-zero) / "";
+    grid-column:2;grid-row:1;justify-self:start;align-self:end;
+    margin-left:-.055em;
+    font-family:var(--disp);font-weight:300;
+    font-size:clamp(7.5rem,17vw,14.5rem);
+    line-height:.74;letter-spacing:-.06em;
+    font-variant-numeric:lining-nums proportional-nums;
+    color:var(--accent-ink);
+    pointer-events:none}
+  .ph-grid>div:first-child{grid-column:1;grid-row:1 / span 2;align-self:end}
+  .ph-grid>div:last-child{grid-column:2;grid-row:2}
+}
+@supports selector(:has(a)){
+  @media (max-width:900px){
+    .ph-grid::before{grid-column:1;grid-row:1;font-size:clamp(5.5rem,26vw,9rem)}
+    .ph-grid>div:first-child{grid-column:1;grid-row:2}
+    .ph-grid>div:last-child{grid-column:1;grid-row:3}
+  }
+}
+/* the statement under it: tighter at display size, a step larger so the numeral-to-h1 jump is about 3x */
+.ph h1{font-size:clamp(2.5rem,5.6vw,4.5rem);letter-spacing:-.032em;line-height:1}
+
+/* 2. part numerals: light, large, tight; the heading under them takes the weight */
+.pn{font-family:var(--disp);font-weight:300;font-size:clamp(2.6rem,4.2vw,3.5rem);line-height:.86;letter-spacing:-.045em;margin:0 0 16px -.04em;font-variant-numeric:lining-nums proportional-nums}
+.part-k h2{font-weight:500;font-size:clamp(1.2rem,1.75vw,1.48rem);letter-spacing:-.01em;line-height:1.18}
+.steps li::before{font-family:var(--disp);font-weight:300;font-size:clamp(2.2rem,3.4vw,2.8rem);line-height:.86;letter-spacing:-.045em;margin:0 0 12px -.04em;font-variant-numeric:lining-nums proportional-nums}
+.steps li b{font-weight:600}
+@media (max-width:900px){
+  .pn{font-size:clamp(2.4rem,11vw,3rem);margin-bottom:10px}
+}
+
+/* 3. overview hero: the number is the monument, the sentence is the caption */
+.hero-n{font-size:clamp(3.2rem,7.6vw,5.6rem);letter-spacing:-.045em;line-height:.9;font-variant-numeric:lining-nums proportional-nums}
+.hero-sl{font-weight:500;letter-spacing:.005em}
+.hero h1{font-size:clamp(2.25rem,4.5vw,3.55rem);letter-spacing:-.03em;max-width:17ch}
+
+/* 4. pager: the next page's name at specimen size */
+.pager a{min-height:128px;gap:10px;padding:22px 0 10px}
+.pager .pg-t{font-size:clamp(2.3rem,5.6vw,4.6rem);line-height:.94;letter-spacing:-.04em}
+.pager .pg-k{font-weight:500}
+.pager .pg-s{margin-top:4px}
+
+/* 6. snapshot figures: display size, measured against the tile, never wider than it */
+.snap-i{container-type:inline-size}
+.snap-n{font-size:clamp(2.2rem,3.9vw,3.4rem);font-size:clamp(2.1rem,19cqi,3.6rem);line-height:.92;letter-spacing:-.04em;font-variant-numeric:lining-nums proportional-nums}
+.snap-l{margin-top:4px}
+
+/* 7. filed record: the year is the volume number */
+.news-year{grid-template-columns:minmax(0,10.5rem) minmax(0,1fr)}
+.news-yr{font-size:clamp(2.6rem,5vw,4.2rem);line-height:.85;letter-spacing:-.045em;font-variant-numeric:lining-nums proportional-nums}
+@media (max-width:900px){
+  .news-year{grid-template-columns:minmax(0,7.5rem) minmax(0,1fr)}
+  .news-yr{font-size:2.7rem}
+}
+@media (max-width:640px){
+  .news-year{grid-template-columns:minmax(0,1fr)}
+  .news-yr{font-size:3rem}
+}
+
+/* 8. gauge: the current tick's number at display size, the others stay mono labels */
+.gauge li.here .g-n{font-family:var(--disp);font-weight:300;font-size:1.75rem;line-height:.9;letter-spacing:-.04em;margin:2px 0 4px -.03em;font-variant-numeric:lining-nums proportional-nums}
+.gauge li.here a{font-weight:600}
+@media (max-width:760px){
+  .gauge li.here .g-n{font-size:1.3rem;margin:0}
+}
+
+/* filed-statement totals: single rule over a double rule */
+table.fin tr.tot td,table.fin tr.tot th{border-top:1px solid var(--ink);border-bottom:3px double var(--ink)}
+.sec-dark table.fin tr.tot td,.sec-dark table.fin tr.tot th{border-bottom-color:oklch(0.98 0.010 240.8 / .5)}
+/* mc:surface */
+/* ============================================================================
+   Cryo-Cell surface system: six stocks drawn from ONE idea, a gauge (a rule with ticks) and the cold rings around its dot.
+   Paper and tint carry printed tick scales in the two gutters (ink on paper). Tint adds a blind-white ledger rule across
+   (polarity: BLIND WHITE ruling on tint, which only raises contrast). Dark stock carries the same ticks in negative and
+   a corner arc of rings. The gravest band is its own darker stock, ruled like a ledger and never given extra chroma or glow.
+   The ink-blue stock (the pager) holds the rings at the right edge.
+   Geometry: .wrap is 100% - 44px, so no glyph lands left of x = 22 or right of W - 22; every tick is 14px or shorter and sits
+   at x <= 14 on its side. Layer order on light stock: washes FIRST (on top), the ink ticks LAST (under).
+   NOTE: background-image takes images only. Size, position and repeat live in their own properties, one list entry per
+   layer in the same order (a shorthand inside background-image drops the whole declaration and renders the band flat).
+   ============================================================================ */
+:root{
+  --tick:      oklch(0.30 0.010 240.8 / .30);       /* printed ink, gutters only */
+  --tick-neg:  oklch(0.98 0.010 240.8 / .22);       /* the same scale in negative on dark */
+  --ledger:    oklch(1 0 0 / .62);                  /* BLIND WHITE ruling on tint */
+  --arc:       oklch(0.98 0.010 240.8 / .065);      /* ring arcs on dark stock */
+  --glow:      oklch(0.50 0.10 240.8 / .30);        /* cold glow on dark stock */
+}
+main>section{position:relative}
+.sec-dark,.sec-grave,.sec-ink{color:oklch(0.93 0.004 var(--Hn))}
+.sec-dark .part{border-top-color:var(--line-d)}
+.sec-dark .part:first-child{border-top:none}
+.sec-dark .ph-top,.sec-dark .notice-h{border-bottom-color:var(--line-d)}
+
+/* A. PAPER: head wash falling from tint, then the ink tick scales in both gutters (minor every 24px, major every 120px) */
+.sec-white{background-color:var(--paper);
+  background-image:
+    linear-gradient(to bottom,var(--tint) 0,var(--paper) 260px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 120px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 120px);
+  background-size:100% 100%,8px 100%,8px 100%,14px 100%,14px 100%;
+  background-position:0 0,0 0,100% 0,0 0,100% 0;
+  background-repeat:no-repeat}
+
+/* B. TINT: a blind-white ledger rule every 24px across (it sits under the text and only lifts contrast), ink ticks last */
+.sec-tint{background-color:var(--tint);
+  background-image:
+    repeating-linear-gradient(to bottom,var(--ledger) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 120px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 120px);
+  background-size:100% 100%,8px 100%,8px 100%,14px 100%,14px 100%;
+  background-position:0 0,0 0,100% 0,0 0,100% 0;
+  background-repeat:no-repeat}
+/* B2. TINT, plain step: for the band whose tables carry the weight (the ledger rule would run behind the plates) */
+.sec-tint.plain{
+  background-image:
+    linear-gradient(to bottom,var(--paper) 0,var(--tint) 240px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 120px),
+    repeating-linear-gradient(to bottom,var(--tick) 0 1px,transparent 1px 120px)}
+
+/* C. DARK: cold glow top-right, a corner arc of rings (44px pitch), the tick scales in negative */
+.sec-dark{background-color:var(--deep);
+  background-image:
+    radial-gradient(60% 90% at 88% 0,var(--glow) 0,transparent 70%),
+    repeating-radial-gradient(circle at 100% 0,var(--arc) 0 1px,transparent 1px 44px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 120px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 120px);
+  background-size:100% 100%,100% 100%,8px 100%,8px 100%,14px 100%,14px 100%;
+  background-position:0 0,0 0,0 0,100% 0,0 0,100% 0;
+  background-repeat:no-repeat}
+
+/* D. GRAVEST (the disclosures band): a darker stock, a double rule at its top edge and a ledger of 7px lines in negative.
+      No glow, no extra chroma: it reads as a different, plainer paper, not as an alarm. */
+.sec-grave{background-color:var(--deep-2);
+  background-image:
+    linear-gradient(to bottom,oklch(0.98 0.010 240.8 / .26) 0 1px,transparent 1px 4px,oklch(0.98 0.010 240.8 / .26) 4px 5px,transparent 5px),
+    repeating-linear-gradient(to bottom,oklch(0.98 0.010 240.8 / .035) 0 1px,transparent 1px 7px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 120px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 120px);
+  background-size:100% 6px,100% 100%,8px 100%,8px 100%,14px 100%,14px 100%;
+  background-position:0 0,0 0,0 0,100% 0,0 0,100% 0;
+  background-repeat:no-repeat}
+
+/* E. INK-BLUE (the pager): a slow gradient and the rings at the right edge, 36px pitch, in white at low alpha */
+.sec-ink{background-color:var(--accent-ink-d);
+  background-image:
+    linear-gradient(100deg,var(--accent-ink-d) 0,var(--accent-ink) 150%),
+    repeating-radial-gradient(circle at 92% 50%,oklch(1 0 0 / .17) 0 1px,transparent 1px 36px),
+    repeating-linear-gradient(to bottom,oklch(1 0 0 / .26) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,oklch(1 0 0 / .26) 0 1px,transparent 1px 24px);
+  background-size:100% 100%,100% 100%,8px 100%,8px 100%;
+  background-position:0 0,0 0,0 0,100% 0;
+  background-repeat:no-repeat}
+.sec-ink .eyebrow{color:oklch(0.96 0.02 var(--Hn))}
+.sec-ink .eyebrow::before{background:var(--gold)}
+.sec-ink :focus-visible{outline-color:#fff}
+
+/* F. HERO (overview): the dark stock again, but the glow moves behind the rings (right, centred) and the arc is larger */
+#hero.sec-dark{
+  background-image:
+    radial-gradient(46% 70% at 76% 50%,oklch(0.46 0.12 240.8 / .45) 0,transparent 70%),
+    repeating-radial-gradient(circle at 76% 50%,oklch(0.98 0.010 240.8 / .055) 0 1px,transparent 1px 52px),
+    linear-gradient(to bottom,oklch(0.32 0.05 240.8 / .5) 0,transparent 28%),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 120px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 120px);
+  background-size:100% 100%,100% 100%,100% 100%,8px 100%,8px 100%,14px 100%,14px 100%;
+  background-position:0 0,0 0,0 0,0 0,100% 0,0 0,100% 0;
+  background-repeat:no-repeat}
+
+/* the footer takes the dark stock's ticks too, so the page ends on the same ruler it began with */
+footer{background-image:
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 24px),
+    repeating-linear-gradient(to bottom,var(--tick-neg) 0 1px,transparent 1px 24px);
+  background-size:8px 100%,8px 100%;background-position:0 0,100% 0;background-repeat:no-repeat}
+
+@media (max-width:640px){
+  /* gutters are 22px wide on a phone: keep the major ticks, drop the minors so the rail does not read as a barcode */
+  .sec-white,.sec-tint,.sec-dark,.sec-grave{background-size:100% 100%,0 0,0 0,10px 100%,10px 100%}
+  .sec-dark{background-size:100% 100%,100% 100%,0 0,0 0,10px 100%,10px 100%}
+  .sec-grave{background-size:100% 6px,100% 100%,0 0,0 0,10px 100%,10px 100%}
+  #hero.sec-dark{background-size:100% 100%,100% 100%,100% 100%,0 0,0 0,10px 100%,10px 100%}
+  .sec-tint.plain{background-size:100% 100%,0 0,0 0,10px 100%,10px 100%}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="concept-note">Independent design concept. Not affiliated with Cryo-Cell International, Inc. Official investor relations: <a href="https://ir.cryo-cell.com/" target="_blank" rel="noopener">ir.cryo-cell.com</a></div>
+
+<header class="site-nav">
+  <div class="wrap nav-inner">
+    <a class="nav-brand" href="index.html"><span class="nav-logo"><img src="img/logo.svg" alt="Cryo-Cell" width="882" height="255"></span></a>
+    <nav aria-label="Primary">
+      <button class="nav-burger" id="nav-burger" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Overview</a></li>
+        <li><a href="business.html">Business</a></li>
+        <li><a href="industry.html">Industry</a></li>
+        <li><a href="financials.html">Financials</a></li>
+        <li><a class="active" href="stock.html" aria-current="page">Stock</a></li>
+        <li><a href="disclosures.html">Disclosures</a></li>
+        <li><a href="governance.html">Governance</a></li>
+        <li><a href="filings.html">Filings</a></li>
+        <li><a class="btn btn-primary" href="contact.html">Contact IR <span class="arw" aria-hidden="true">-&gt;</span></a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+
+<section class="sec-white ph" id="top"><div class="wrap">
+<div class="ph-top"><span><b>05 / 09</b> &nbsp;Stock</span><span>Cryo-Cell International, Inc. &middot; NYSE American: CCEL</span></div>
+<div class="ph-grid"><div><h1>How the stock and its capital stand.</h1><p class="ph-lede">The common stock is listed on NYSE American and is below a continued-listing standard. The dividend has been suspended, the buyback has been idle since fiscal 2025, and the two co-chief executive officers, who are brothers, hold 23.48 percent and 13.14 percent of the shares. This site shows no live or delayed quote.</p></div><div><p class="ph-toc-h">On this page</p><ul class="ph-toc"><li><a href="#p-listing"><span>05.1</span>Listing and shares</a></li><li><a href="#p-notice"><span>05.2</span>The continued-listing notice</a></li><li><a href="#p-div"><span>05.3</span>Dividends</a></li><li><a href="#p-buy"><span>05.4</span>Buybacks and equity plans</a></li><li><a href="#p-own"><span>05.5</span>Who owns the stock</a></li><li><a href="#p-debtlink"><span>05.6</span>Debt, in brief</a></li></ul></div></div>
+<nav class="gauge" aria-label="All nine pages"><ol><li><a href="index.html"><span class="g-n">01</span>Overview</a></li><li><a href="business.html"><span class="g-n">02</span>Business</a></li><li><a href="industry.html"><span class="g-n">03</span>Industry</a></li><li><a href="financials.html"><span class="g-n">04</span>Financials</a></li><li class="here"><a href="stock.html"><span class="g-n">05</span>Stock<span class="sr-only"> (this page)</span></a></li><li><a href="disclosures.html"><span class="g-n">06</span>Disclosures</a></li><li><a href="governance.html"><span class="g-n">07</span>Governance</a></li><li><a href="filings.html"><span class="g-n">08</span>Filings</a></li><li><a href="contact.html"><span class="g-n">09</span>Contact IR</a></li></ol><span class="gauge-motif-dot" style="--i:4" data-i="4" aria-hidden="true"></span><p class="gauge-here" aria-hidden="true"><span>05</span>Stock</p></nav>
+</div></section>
+<section class="sec-white"><div class="wrap">
+<div class="part" id="p-listing"><div class="part-k"><span class="pn">05.1</span><h2>Listing and shares</h2><p class="mn">Share counts, holders and the one price the 10-K states.</p></div><div class="part-b reveal">
+<dl class="kv">
+  <div><dt>Exchange and symbol</dt><dd>NYSE American, CCEL. <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526083096/ccel-20251130.htm" target="_blank" rel="noopener">10-K, Item 5</a></dd></div>
+  <div><dt>Shares outstanding</dt><dd>8,062,650 at Oct 9, 2026. <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526419156/ccel-20260831.htm" target="_blank" rel="noopener">10-Q, cover</a></dd></div>
+  <div><dt>Issued, treasury, authorised</dt><dd>14,884,619 issued less 8,062,650 outstanding leaves 6,821,969 held in treasury <span class="tg tg-cm">Computed</span>; 20,000,000 authorised, par value $0.01. <span class="tg tg-f">Filed</span></dd></div>
+  <div><dt>Holders</dt><dd>134 holders of record at November 30, 2025, and management believes about 1,200 additional beneficial holders. <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526083096/ccel-20251130.htm" target="_blank" rel="noopener">10-K, Item 5</a></dd></div>
+  <div><dt>The one price a filing states</dt><dd>&ldquo;The last price of our common stock as reported on the NYSE American on February 20, 2026 was $3.36 per share.&rdquo; <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526083096/ccel-20251130.htm" target="_blank" rel="noopener">10-K, Item 5</a> This site does not update it.</dd></div>
+  <div><dt>Value held by non-affiliates</dt><dd>$26,519,624 at May 31, 2025, the last business day of the second fiscal quarter, as stated on the 10-K cover. <span class="tg tg-f">Filed</span></dd></div>
+  <div><dt>Filer status</dt><dd>Non-accelerated filer and smaller reporting company. <span class="tg tg-f">Filed</span></dd></div>
+  <div><dt>A live quote</dt><dd>The company&rsquo;s own quote page is on its investor site. <a class="tl" href="https://ir.cryo-cell.com/stock-data/quote" target="_blank" rel="noopener">ir.cryo-cell.com, stock quote</a></dd></div>
+</dl></div></div>
+</div></section>
+<section class="sec-tint"><div class="wrap">
+<div class="part" id="p-notice"><div class="part-k"><span class="pn">05.2</span><h2>The continued-listing notice</h2><p class="mn">Five dated steps, in the company&rsquo;s filed words.</p></div><div class="part-b reveal">
+<ol class="trail">
+  <li><time datetime="2026-03-09">Mar 9, 2026</time><div><b>Notice from NYSE American.</b> The company &ldquo;is not in compliance with the continued listing standards set forth in Section 1003 (a) of the NYSE American Company Guide.&rdquo; The notice &ldquo;has no immediate effect on the listing or trading&rdquo; of the stock. <span class="tg tg-f">Filed</span></div></li>
+  <li><time datetime="2026-03-12">Mar 12, 2026</time><div><b>8-K and press release.</b> The release gives the reasons: the company &ldquo;reported (i) a stockholders&rsquo; deficit as of November 30, 2025, and (ii) net losses in two of its three most recent fiscal years&rdquo; ended November 30, 2023, 2024 and 2025. <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526104392/ccel-20260309.htm" target="_blank" rel="noopener">8-K</a></div></li>
+  <li><time datetime="2026-04-08">Apr 8, 2026</time><div><b>Compliance plan submitted.</b> <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526214569/ccel-20260506.htm" target="_blank" rel="noopener">8-K, May 8</a></div></li>
+  <li><time datetime="2026-05-06">May 6, 2026</time><div><b>Plan accepted.</b> NYSE Regulation accepted the plan &ldquo;and granted the Company a plan period through September 9, 2027.&rdquo; The stock continues to trade &ldquo;subject to the Company&rsquo;s compliance with the initiatives and conditions set forth in the compliance plan and continued periodic review by NYSE Regulation.&rdquo; <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526214569/ccel-20260506.htm" target="_blank" rel="noopener">8-K</a></div></li>
+  <li class="open"><time datetime="2027-09-09">Sep 9, 2027</time><div><b>Plan period ends.</b> &ldquo;If the Company fails to regain compliance by such date, or fails to make progress consistent with the accepted compliance plan during the plan period, NYSE American may initiate delisting proceedings.&rdquo; <span class="tg tg-f">Filed</span></div></li>
+</ol>
+<p>The deficit that triggered the notice was ($18.6M) at November 30, 2025 and ($16.4M) at August 31, 2026. <span class="tg tg-f">Filed</span> The 8-Ks do not state an equity level the exchange requires, and the filings do not say how the company expects to regain compliance beyond &ldquo;the initiatives and conditions&rdquo; in its plan. <a class="tl" href="disclosures.html#p-listing">Disclosures</a></p></div></div>
+</div></section>
+<section class="sec-white"><div class="wrap">
+<div class="part" id="p-div"><div class="part-k"><span class="pn">05.3</span><h2>Dividends</h2><p class="mn">Three dividends, then none. The record-date conflict is the company&rsquo;s own.</p></div><div class="part-b reveal">
+<div class="table-scroll"><table class="fin"><caption>Dividends declared in the last two fiscal years</caption><thead><tr><th scope="col">Declared</th><th scope="col" class="num">Per share</th><th scope="col" class="num">Record date</th><th scope="col" class="num">Paid</th></tr></thead><tbody>
+<tr><th scope="row">Oct 29, 2024</th><td class="num">$0.25</td><td class="num">Nov 29, 2024</td><td class="num">$2,020,539 in total</td></tr>
+<tr><th scope="row">Jan 24, 2025</th><td class="num">$0.25</td><td class="num">Feb 14, 2025 or Feb 28, 2025 *</td><td class="num">Feb 28, 2025</td></tr>
+<tr><th scope="row">May 7, 2025</th><td class="num">$0.15</td><td class="num">May 21, 2025</td><td class="num">May 30, 2025</td></tr>
+</tbody></table></div>
+<p class="tnote">* The 10-K gives February 14, 2025 as the record date in its discussion of cash flows and February 28, 2025 in Item 5 and the notes. Both are shown. <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526083096/ccel-20251130.htm" target="_blank" rel="noopener">10-K</a> The November 2024 dividend was &ldquo;funded by a revolving line of credit from Susser Bank.&rdquo;</p>
+<ul class="bl">
+  <li><b>Third quarter of fiscal 2025.</b> On August 14, 2025 the company said it &ldquo;will not declare a quarterly cash dividend&rdquo; and that &ldquo;this decision reflects lower-than-expected profitability.&rdquo; <span class="tg tg-cs">Company statement</span> <a class="src" href="https://ir.cryo-cell.com/news-events/press-releases/detail/142/cryo-cell-international-inc-provides-dividend-update" target="_blank" rel="noopener">Press release</a></li>
+  <li><b>Fourth quarter of fiscal 2025.</b> On November 12, 2025 an 8-K said the company &ldquo;will not declare a quarterly cash dividend for the fourth quarter of fiscal 2025&rdquo; and &ldquo;may or may not pay a dividend in future periods.&rdquo; <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312525277872/ccel-20251112.htm" target="_blank" rel="noopener">8-K</a></li>
+  <li><b>Fiscal 2026 to date.</b> Dividends paid in the nine months to August 31, 2026: $0. <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526419156/ccel-20260831.htm" target="_blank" rel="noopener">10-Q</a></li>
+</ul>
+<p class="note">In fiscal 2024 and 2025 together the company paid $5.3M in dividends and $1.6M for its own shares while its net result was a loss of $2.0M. <span class="tg tg-cm">Computed</span> From ($2,020,539) and ($3,231,227) of dividends paid, ($1,423,871) and ($169,502) of buybacks, and net income of $402,095 and ($2,429,385).</p></div></div>
+</div></section>
+<section class="sec-tint plain"><div class="wrap">
+<div class="part" id="p-buy"><div class="part-k"><span class="pn">05.4</span><h2>Buybacks and equity plans</h2><p class="mn">What the company has bought back, and what it has promised to issue.</p></div><div class="part-b reveal">
+<dl class="kv">
+  <div><dt>Shares repurchased</dt><dd>$1,423,871 in fiscal 2024; $169,502 in fiscal 2025; none in the nine months to August 31, 2026. <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526083096/ccel-20251130.htm" target="_blank" rel="noopener">10-K</a> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526419156/ccel-20260831.htm" target="_blank" rel="noopener">10-Q</a></dd></div>
+  <div><dt>Remaining authority</dt><dd>1,178,031 shares. <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526419156/ccel-20260831.htm" target="_blank" rel="noopener">10-Q</a></dd></div>
+  <div><dt>Options outstanding</dt><dd>1,029,978 at a weighted-average exercise price of $8.78, with 611,100 shares available for future issuance, at November 30, 2025. These are exercise prices from the 10-K, not market prices. <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526083096/ccel-20251130.htm" target="_blank" rel="noopener">10-K, Item 5</a></dd></div>
+</dl></div></div>
+</div></section>
+<section class="sec-white"><div class="wrap">
+<div class="part" id="p-own"><div class="part-k"><span class="pn">05.5</span><h2>Who owns the stock</h2><p class="mn">The two brothers who are co-chief executives hold 23.48% and 13.14%.</p></div><div class="part-b reveal"><ul class="own"><li class="grp"><span class="own-n">All directors and executive officers as a group (6 persons)<small>proxy statement, September 21, 2026</small></span><span class="own-b"><i style="--w:88.73%"></i></span><span class="own-p">39.93%</span></li><li><span class="own-n">David Portnoy<small>Chairman and Co-Chief Executive Officer</small></span><span class="own-b"><i style="--w:52.18%"></i></span><span class="own-p">23.48%</span></li><li><span class="own-n">Mark Portnoy<small>Co-Chief Executive Officer</small></span><span class="own-b"><i style="--w:29.20%"></i></span><span class="own-p">13.14%</span></li><li><span class="own-n">Camac Partners, LLC and affiliates<small>5% holder (Schedule 13D/A, July 7, 2026)</small></span><span class="own-b"><i style="--w:15.18%"></i></span><span class="own-p">6.83%</span></li><li><span class="own-n">Adam Fleishman, as trustee, and Adam Fleishman<small>5% holder (Schedule 13G filed January 5, 2015)</small></span><span class="own-b"><i style="--w:14.02%"></i></span><span class="own-p">6.31%</span></li><li><span class="own-n">Duke University<small>5% holder (shares issued under the 2021 licence)</small></span><span class="own-b"><i style="--w:11.29%"></i></span><span class="own-p">5.08%</span></li></ul><p class="tnote">Percentages as stated in the proxy statement, based on 8,062,650 shares at September 21, 2026. Each holder&rsquo;s percentage also counts options exercisable within 60 days, so the rows are not additive. <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526420608/ccel-20261013.htm" target="_blank" rel="noopener">Proxy statement</a></p><ul class="bl"><li><b>Control.</b> The 10-K says that at November 30, 2025 &ldquo;our executive officers, directors, 5% stockholders (known to us through publicly available information) and their affiliates beneficially owned approximately 47% of our voting stock.&rdquo; <span class="tg tg-f">Filed</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000119312526083096/ccel-20251130.htm" target="_blank" rel="noopener">10-K, Item 1A</a></li><li><b>Camac Partners.</b> A Schedule 13D filed March 25, 2026 (event date March 23) reported 430,900 shares (about 5.3%); Amendment No. 1, filed July 7, 2026 (event date July 2), reported 551,081 shares (about 6.8%). The filings say the holders may discuss with management and the board &ldquo;Board composition and corporate governance, levels of expenditures, monetization of all of the company&rsquo;s assets, and return of capital to shareholders.&rdquo; <span class="tg tg-ac">As cited</span> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000149315226012763/0001493152-26-012763-index.htm" target="_blank" rel="noopener">13D</a> <a class="src" href="https://www.sec.gov/Archives/edgar/data/862692/000149315226032265/0001493152-26-032265-index.htm" target="_blank" rel="noopener">13D/A</a></li><li><b>Adam Fleishman.</b> The 6.31% rests on a Schedule 13G filed January 5, 2015. <span class="tg tg-f">Filed</span></li><li><b>Duke University.</b> 409,734 shares were issued under the 2021 licence; Duke is also the company&rsquo;s counterparty in the arbitration. <span class="tg tg-f">Filed</span></li></ul></div></div>
+</div></section>
+<section class="sec-tint plain"><div class="wrap">
+<div class="part" id="p-debtlink"><div class="part-k"><span class="pn">05.6</span><h2>Debt, in brief</h2><p class="mn">Where the credit facility is set out.</p></div><div class="part-b reveal"><p>The company owes Susser Bank a term note of $8,040,405 non-current plus $199,184 current at August 31, 2026, and had nothing drawn on its revolving credit line. The terms, the two financial covenants and the October 2025 amendment are on the Financials page. <span class="tg tg-f">Filed</span> <a class="tl" href="financials.html#p-debt">Debt and covenants</a></p></div></div>
+</div></section>
+<section class="sec-dark sec-ink pager-band" aria-labelledby="pg-h"><div class="wrap"><h2 class="sr-only" id="pg-h">Continue through the site</h2><nav class="pager" aria-label="Previous and next page"><a class="pg-p" href="financials.html"><span class="pg-k">Previous &middot; 04</span><span class="pg-t">Financials</span><span class="pg-s">Eight years, the fiscal 2025 loss, seven quarters, the balance sheet, cash flow.</span></a><a class="pg-n" href="disclosures.html"><span class="pg-k">Next &middot; 06</span><span class="pg-t">Disclosures</span><span class="pg-s">The matters that could cost the listing, the licence or the equity.</span></a></nav></div></section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+<div class="foot-brand"><img src="img/logo-light.svg" alt="Cryo-Cell" width="882" height="255"></div>
+<ul class="foot-map" aria-label="All nine pages">
+  <li><a href="index.html"><span>01</span>Overview</a></li>
+  <li><a href="business.html"><span>02</span>Business</a></li>
+  <li><a href="industry.html"><span>03</span>Industry</a></li>
+  <li><a href="financials.html"><span>04</span>Financials</a></li>
+  <li><a href="stock.html"><span>05</span>Stock</a></li>
+  <li><a href="disclosures.html"><span>06</span>Disclosures</a></li>
+  <li><a href="governance.html"><span>07</span>Governance</a></li>
+  <li><a href="filings.html"><span>08</span>Filings</a></li>
+  <li><a href="contact.html"><span>09</span>Contact IR</a></li>
+</ul>
+<ul class="footer-links">
+  <li><a href="https://ir.cryo-cell.com/" target="_blank" rel="noopener">Official investor relations</a></li>
+  <li><a href="https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&amp;CIK=0000862692&amp;type=&amp;dateb=&amp;owner=include&amp;count=40" target="_blank" rel="noopener">SEC EDGAR filings, CIK 0000862692</a></li>
+  <li><a href="https://www.sec.gov/Archives/edgar/data/862692/000119312526083096/ccel-20251130.htm" target="_blank" rel="noopener">Form 10-K, fiscal 2025</a></li>
+  <li><a href="https://www.sec.gov/Archives/edgar/data/862692/000119312526419156/ccel-20260831.htm" target="_blank" rel="noopener">Form 10-Q, quarter ended Aug 31, 2026</a></li>
+  <li><a href="https://www.sec.gov/Archives/edgar/data/862692/000119312526420608/ccel-20261013.htm" target="_blank" rel="noopener">Proxy statement, Oct 27, 2026 meeting</a></li>
+</ul>
+<p class="method">How this site was made: figures come from Cryo-Cell&rsquo;s Form 10-K for the fiscal year ended November 30, 2025 (filed February 27, 2026), its Forms 10-Q for the three quarters of fiscal 2026, its Forms 8-K from September 2025 to September 2026, its proxy statement of October 13, 2026 and two Schedule 13D filings, and are labelled filed, company figure, company statement, computed or as cited. Amounts are US dollars as filed. Company statements and press-release links were read on ir.cryo-cell.com on October 18, 2026; where they differ from a filing, both are shown. The logo and the brand colours are the company&rsquo;s own, from its investor site. The diagrams are drawn for this site and are not the company&rsquo;s images. The list of filings was checked against EDGAR on October 18, 2026.</p>
+    <p class="fls"><b>About this page:</b> This is an independent design concept and is not the official Cryo-Cell investor relations website. It is not affiliated with, endorsed by, or maintained by Cryo-Cell International, Inc. Figures were assembled from public materials at a point in time and may be outdated; verify every figure against the company's official SEC filings. For official information, visit <a href="https://ir.cryo-cell.com/">ir.cryo-cell.com</a>.</p>
+    <p class="fls"><b>Forward-Looking Statements:</b> This website contains forward-looking statements within the meaning of the Private Securities Litigation Reform Act of 1995, including statements regarding its continued listing on NYSE American after the notice of March 9, 2026 and the outcome of its compliance plan; the arbitration with Duke University and its effect on the Duke licence, the planned infusion clinics, the Cryo-Cell Institute for Cellular Therapies and the Celle Corp. spinoff; its stockholders' deficit and its large deferred revenue obligations; its debt to Susser Bank and the financial covenants in that credit agreement; the suspension of its quarterly dividend; the impairment of its public cord blood inventory; competition from approximately 25 other national private cord blood banks; regulation by the FDA and by state licensing; and the concentration of voting power in its directors and officers. These statements involve known and unknown risks, uncertainties, and other factors that may cause actual results to differ materially from those expressed or implied. We undertake no obligation to update any forward-looking statements except as required by law. See the company's SEC filings, including its most recent 10-K and 10-Q, for a full discussion of risk factors.</p>
+    <p class="market-note">Market data, where shown, is delayed at least 15 minutes and provided for this concept only. Real-time quotes and official figures are available through the company's investor relations site and SEC filings. This concept page shows no live or delayed share quote, no price chart and no market capitalisation. The only share price it states is the $3.36 last price reported on NYSE American on February 20, 2026 that the Form 10-K gives, and the only market value is the $26,519,624 held by non-affiliates at May 31, 2025 that the 10-K cover gives. The shares trade on NYSE American under the symbol CCEL.</p>
+  </div>
+</footer>
+
+<script>
+/* mediaconsole motion: inlined by scaffold.mjs at the end of body, identical on every page; never edit it.
+   Sets html.js, runs the ONE reveal observer (fires the mc:reveal hook), scroll-spy, hamburger aria, and the
+   #hero-motif .paused toggle (off-screen, hidden tab, [data-motif-toggle]). Null-guarded: a failure reveals everything. */
+(function(){
+  var d=document,root=d.documentElement;
+  root.classList.add('js');
+  var reduce=!!(window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  var hasIO='IntersectionObserver' in window;
+  function fire(el,name,detail){
+    var ev;
+    try{ev=new CustomEvent(name,{bubbles:true,detail:detail})}
+    catch(x){ev=d.createEvent('CustomEvent');ev.initCustomEvent(name,true,false,detail)}
+    el.dispatchEvent(ev);
+  }
+  /* mc:reveal fires ONCE per .reveal element, bubbling, as .in lands; detail.reduced is true under reduced motion.
+     Components hook here (counters.js) instead of adding a second observer. */
+  function show(el){
+    if(el.classList.contains('in'))return;
+    el.classList.add('in');
+    fire(el,'mc:reveal',{reduced:reduce});
+  }
+  try{
+    var els=[].slice.call(d.querySelectorAll('.reveal'));
+    if(reduce||!hasIO){els.forEach(show)}
+    else{
+      var io=new IntersectionObserver(function(en){en.forEach(function(e){if(e.isIntersecting){io.unobserve(e.target);show(e.target)}})},{threshold:.12});
+      els.forEach(function(el){io.observe(el)});
+    }
+  }catch(err){root.classList.remove('js');[].forEach.call(d.querySelectorAll('.reveal'),function(el){el.classList.add('in')})}
+  try{
+    var burger=d.querySelector('.nav-burger'),links=d.getElementById('nav-links'),nav=d.querySelector('.site-nav');
+    if(burger&&links){
+      var setOpen=function(o){links.classList.toggle('open',o);burger.setAttribute('aria-expanded',o?'true':'false')};
+      burger.addEventListener('click',function(){setOpen(!links.classList.contains('open'))});
+      links.addEventListener('click',function(e){if(e.target.closest&&e.target.closest('a'))setOpen(false)});
+      d.addEventListener('keydown',function(e){if((e.key==='Escape'||e.key==='Esc')&&links.classList.contains('open')){setOpen(false);burger.focus()}});
+    }
+    if(nav){var onScroll=function(){nav.classList.toggle('scrolled',window.scrollY>8)};window.addEventListener('scroll',onScroll,{passive:true});onScroll()}
+  }catch(err){}
+  try{
+    var na=[].slice.call(d.querySelectorAll('.nav-links a[href^="#"]:not(.btn)'));
+    if(na.length&&hasIO){
+      var so=new IntersectionObserver(function(en){en.forEach(function(e){
+        if(!e.isIntersecting)return;var id='#'+e.target.id;
+        na.forEach(function(a){var on=a.getAttribute('href')===id;a.classList.toggle('active',on);if(on)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')});
+      })},{rootMargin:'-40% 0px -55% 0px'});
+      na.forEach(function(a){var t=d.getElementById(a.getAttribute('href').slice(1));if(t)so.observe(t)});
+    }
+  }catch(err){}
+  /* hero motif pause: toggles .paused on #hero-motif (off-screen, hidden tab, or the user's [data-motif-toggle]).
+     The class is the whole contract: substrate CSS pauses every CSS animation inside it; JS motifs watch it (wave.js). */
+  try{
+    var motif=d.getElementById('hero-motif');
+    if(motif&&!reduce){
+      var hero=d.getElementById('hero')||motif,hv=true,user=false,tg=[].slice.call(d.querySelectorAll('[data-motif-toggle]'));
+      var sm=function(){var p=user||!hv||d.hidden;motif.classList.toggle('paused',p)};
+      if(hasIO)new IntersectionObserver(function(en){en.forEach(function(e){hv=e.isIntersecting});sm()},{threshold:0}).observe(hero);
+      d.addEventListener('visibilitychange',sm);
+      tg.forEach(function(b){
+        b.setAttribute('aria-pressed','false');
+        b.addEventListener('click',function(){user=!user;tg.forEach(function(t){t.setAttribute('aria-pressed',user?'true':'false')});sm()});
+      });
+    }
+  }catch(err){}
+})();
+</script>
+<script>
+/* The gauge: the gold dot is parked on this page's tick. If the reader came from another page of the site in this tab,
+   it starts on that page's tick and slides across (the CSS animation ends on the parked position, so with no JS, no
+   sessionStorage or reduced motion the dot is simply already where it belongs). */
+(function () {
+  try {
+    var dot = document.querySelector('.gauge-motif-dot');
+    if (!dot) return;
+    var cur = parseInt(dot.getAttribute('data-i'), 10);
+    if (isNaN(cur)) return;
+    var prev = null;
+    try { prev = sessionStorage.getItem('cc-gauge'); } catch (e) {}
+    try { sessionStorage.setItem('cc-gauge', String(cur)); } catch (e) {}
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (reduce || prev === null || prev === '') return;
+    var p = parseInt(prev, 10);
+    if (!isNaN(p) && p >= 0 && p <= 8 && p !== cur) {
+      dot.style.setProperty('--from', String(p));
+      dot.classList.add('slide');
+    }
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
